@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+form {
+    border: 4px solid #f1f1f1;
+}
+.red 
+{
+    background-color: #8d8fef;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+button {
+    background-color: #50cace;
+    color: white;
+    
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+.imglogin {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.login {
+    padding: 16px;
+}
+
+span.password {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.password {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+    </head>
+    <body>
+
+
+
+<form action="/action_page.php">
+  <div class="imglogin">
+  
+  <img src="images/loogo.png" alt="Avatar" class="avatar" height="300px" >
+  </div>
+    <h2 style="text-align: center;">Login</h2>
+  <div class="login">
+    <b>Username/Email</b>
+    <input type="text" placeholder="Enter Username/Email" name="username" required>
+
+    <b>Password</b>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <a href="Homefeed.html"> <button type="button">Login</button></a>
+    
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+    <a href="#"><center>Forgot username or password?</center></a>
+  
+<center><p>Don't have an account?</p></center>
+<a href="signup.html"> <button type="button" class="red">Sign Up</button></a>
+</form>
+
+</body>
+</html>
